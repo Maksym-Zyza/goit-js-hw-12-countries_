@@ -7,7 +7,7 @@ const addMarkup = arr => {
 
   searchRefs.list.innerHTML = '';
 
-  if (arr.status === 404) {
+  if (arr === undefined || arr.status === 404) {
     error({
       title: 'This country not found.',
       text: 'Please try again.',

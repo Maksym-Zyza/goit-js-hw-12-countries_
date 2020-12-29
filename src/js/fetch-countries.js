@@ -4,7 +4,8 @@ function fetchCountries(name) {
   return fetch(url)
     .then(res => res.json())
     .then(data => data)
-    .catch(error => console.log(error));
+    .catch(error => console.dir(error.message));
 }
 
 export default fetchCountries;
+
